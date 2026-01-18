@@ -4,6 +4,10 @@ body {
   margin: 60px auto;
   padding: 0 20px;
   line-height: 1.6;
+  background-color: #FFFCF4;
+  color: #817E7E;
+}
+
 }
 
 nav a {
