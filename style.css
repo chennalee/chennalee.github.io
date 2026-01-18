@@ -14,3 +14,16 @@ nav a {
 .name {
   color: #222222;
 }
+
+a {
+  color: inherit;        /* 부모 글자색 그대로 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+a:hover {
+  text-decoration: underline;
+},
+a:visited,
+a:active {
+  color: inherit;        /* hover / click / visited 모두 동일 */
+}
