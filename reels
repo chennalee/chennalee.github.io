@@ -1,0 +1,13 @@
+<h1>reels</h1>
+
+<h2>Demo Reel</h2>
+<!-- Replace with your ReelCrafter embed -->
+<iframe src="https://reelcrafter.com/embed/YOUR_REEL_ID"
+        width="100%" height="400" frameborder="0"></iframe>
+
+<h2>YouTube</h2>
+<iframe width="560" height="315"
+        src="https://www.youtube.com/embed/YOUTUBE_ID"
+        frameborder="0" allowfullscreen></iframe>
+
+<a href="index.html">← Back</a>
