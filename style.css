@@ -1,5 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Quiet Sans;
   max-width: 800px;
   margin: 60px auto;
   padding: 0 20px;
@@ -16,7 +16,7 @@ nav a {
 }
 
 .name {
-  color: #222222;
+  color: #817E7E;
 }
 
 a {
