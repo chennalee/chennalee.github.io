@@ -31,3 +31,71 @@ a:visited,
 a:active {
   color: inherit;        /* hover / click / visited 모두 동일 */
 }
+
+/* CONTACT PAGE */
+.contact-page {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.25em;
+  color: #8f8f8f;
+  margin-bottom: 60px;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/* Rows */
+.form-row.two-cols {
+  display: grid;
+  grid-template-colums: 1fr 1fr;
+  gap: 24px;
+}
+/* Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+/* Inputs */
+input,
+textarea {
+  background-color: #ededed;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 14px;
+  outline: none;
+}
+textarea {
+  border-radius: 24px;
+  resize: none;
+  min-height: 140px;
+}
+/* Button */
+.send-button {
+  margin: 40px auto 0;
+  background-color: #8e8e8e;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 36px;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .form-row.two-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+
