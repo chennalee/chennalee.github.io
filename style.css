@@ -71,12 +71,18 @@ body {
 /* SECTIONS */
 .section {
   min-height: 100vh;
-  padding: 160px 15%;
+  padding: 160px 0;
 }
 
 .section h2 {
   margin-bottom: 40px;
   font-weight: 600;
+}
+
+.container {
+  max-width: 900px;    /* ⭐️ 핵심 */
+  margin: 0 auto;      /* 가운데 */
+  padding: 0 24px;     /* 모바일 여백 */
 }
 
 /* CONTACT FORM */
