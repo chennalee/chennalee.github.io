@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 260px;
+  height: 220px;
   background: #fffaf0;
   display: flex;
   flex-direction: column; /*세로정렬*/
@@ -29,25 +29,26 @@ body {
 }
 
 .logo {
-  font-size: 24px;
-  letter-spacing: 12px;
+  font-size: 56px;
+  letter-spacing: 10px;
   font-weight: 800;
   color: #ff9ad3;
   text-decoration: none;
-  line-height: 1; /*행간 제거*/
+  line-height: 1.1; /*행간 제거*/
 }
 
 .header nav {
   display: flex;
-  gap: 60px /*메뉴 사이 간격*/
-  margin-top: 30px; /*로고 아래 여백*/
+  gap: 56px /*메뉴 사이 간격*/
+  margin-top: 18px; /*로고 아래 여백*/
 }
 
 .header nav a {
-  text-decoration: none;
-  color: #999;
   font-size: 14px;
   letter-spacing: 3px;
+  color: #999;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
 /* HERO */
@@ -61,7 +62,7 @@ body {
 
 .hero {
   height: 100vh;
-  padding-top: 120px; /* header 높이 보정 */
+  padding-top: 220px; /* header 높이 보정 */
   color: #999;
   display: flex;
   justify-content: center;
