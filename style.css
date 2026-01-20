@@ -39,8 +39,8 @@ body {
 
 .header nav {
   display: flex;
-  gap: 50px /*메뉴 사이 간격*/
-  margin-top: 20px; /*로고 아래 여백*/
+  gap: 60px /*메뉴 사이 간격*/
+  margin-top: 30px; /*로고 아래 여백*/
 }
 
 .header nav a {
