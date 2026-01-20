@@ -1,101 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* ⭐️ 핵심 */
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Quiet Sans;
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-  line-height: 1.6;
-  background-color: #FFFCF4;
-  color: #817E7E;
+  font-family: "Poppins", sans-serif;
+  background: #fffaf0;
+  color: #444;
 }
 
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffaf0;
+  z-index: 100;
 }
 
-nav a {
-  margin-right: 12px;
+.logo {
+  font-size: 32px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  color: #ff9acb;
   text-decoration: none;
 }
 
-.name {
-  color: #817E7E;
+.header nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #999;
+  font-size: 16px;
 }
 
-a {
-  color: inherit;        /* 부모 글자색 그대로 */
-  text-decoration: none; /* 밑줄 제거 */
+/* HERO */
+.hero {
+  height: 100vh;
+  padding-top: 120px; /* header 높이 보정 */
 }
 
-a:hover {
-  text-decoration: underline;
-},
-a:visited,
-a:active {
-  color: inherit;        /* hover / click / visited 모두 동일 */
+/* SECTIONS */
+.section {
+  min-height: 100vh;
+  padding: 160px 15%;
 }
 
-/* CONTACT PAGE */
-.contact-page {
-  max-width: 900px;
-  margin: 120px auto;
-  padding: 0 20px;
+.section h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
-.contact-title {
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 0.25em;
-  color: #8f8f8f;
-  margin-bottom: 60px;
-}
-
-/* Form */
+/* CONTACT FORM */
 .contact-form {
+  max-width: 700px;
+}
+
+.contact-form .row {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  gap: 20px;
 }
-/* Rows */
-.form-row.two-cols {
-  display: grid;
-  grid-template-colums: 1fr 1fr;
-  gap: 24px;
-}
-/* Groups */
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-/* Inputs */
-input,
-textarea {
-  background-color: #ededed;
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 30px;
   border: none;
-  border-radius: 999px;
-  padding: 14px 20px;
-  font-size: 14px;
-  outline: none;
+  background: #eee;
+  font-family: inherit;
 }
-textarea {
-  border-radius: 24px;
-  resize: none;
-  min-height: 140px;
+
+.contact-form textarea {
+  height: 150px;
+  border-radius: 20px;
 }
-/* Button */
-.send-button {
-  margin: 40px auto 0;
-  background-color: #8e8e8e;
+
+.contact-form button {
+  padding: 14px 40px;
+  border-radius: 30px;
+  border: none;
+  background: #888;
   color: white;
-  border: none;
-  border-radius: 999px;
-  padding: 14px 36px;
-  font-size: 14px;
-  letter-spacing: 0.15em;
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
-  .form-row.two-cols {
-    grid-template-columns: 1fr;
-  }
+/* FOOTER */
+.footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
 }
-
-
