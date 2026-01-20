@@ -17,13 +17,17 @@ body {
 /* HEADER */
 .header {
   position: fixed;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 80px 0 40px;
+  background: #fffaf0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  z-index: 100;
 }
 
 /*
@@ -38,24 +42,37 @@ body {
 }
 */
 .logo {
-  font-size: 84px;
-  letter-spacing: 10px;
+  font-size: 56px;
+  letter-spacing: 8px;
   font-weight: 800;
+  color: ff9ad3;
+  text-decoration: none;
   line-height: 1;
+}
+/* 링크 상태 전부 통제 */
+.logo:visited,
+.logo:hover,
+.logo:active {
+  color: #5a2ca0;
+  text-decoration: none;
 }
 
 .header nav {
   display: flex;
-  gap: 56px; /*메뉴 사이 간격*/
-  margin-top: 18px; /*로고 아래 여백*/
+  gap: 36px; /*메뉴 사이 간격*/
+  margin-top: 16px; /*로고 아래 여백*/
 }
 
 .header nav a {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 3px;
   color: #999;
   text-decoration: none;
   text-transform: lowercase;
+}
+
+.header nav a:hover {
+  color: #5a2ca0;
 }
 
 /* HERO */
@@ -69,7 +86,7 @@ body {
 
 .hero {
   height: 100vh;
-  padding-top: 220px; /* header 높이 보정 */
+  padding-top: 240px; /* header 높이 보정 */
   color: #999;
   display: flex;
   justify-content: center;
