@@ -43,6 +43,12 @@ body {
 }
 
 /* HERO */
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #FF9AD3;
+  letter-spacing: 6px;
+}
 .hero {
   height: 100vh;
   padding-top: 120px; /* header 높이 보정 */
