@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-  font-size: 64px;
+  font-size: 24px;
   letter-spacing: 12px;
   font-weight: 800;
   color: #ff9ad3;
@@ -39,7 +39,7 @@ body {
 
 .header nav {
   display: flex;
-  gap: 40px /*메뉴 사이 간격*/
+  gap: 50px /*메뉴 사이 간격*/
   margin-top: 20px; /*로고 아래 여백*/
 }
 
