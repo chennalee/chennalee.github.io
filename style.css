@@ -54,6 +54,7 @@ body {
 .hero {
   height: 100vh;
   padding-top: 120px; /* header 높이 보정 */
+  color: #ff9ad3;
   display: flex;
   justify-content: center;
   align-items: center;
