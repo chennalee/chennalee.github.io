@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 60px 9;
+  padding: 60px 0;
   background: #fffaf0;
   display: flex;
   flex-direction: column; /*세로정렬*/
@@ -35,11 +35,17 @@ body {
   text-decoration: none;
 }
 
+.header nav {
+  display: flex;
+  gap: 40px /*메뉴 사이 간격*/
+  margin-top: 20px; /*로고 아래 여백*/
+}
+
 .header nav a {
-  margin-left: 40px;
   text-decoration: none;
   color: #999;
   font-size: 16px;
+  letter-spacing: 2px;
 }
 
 /* HERO */
