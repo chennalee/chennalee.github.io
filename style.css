@@ -142,7 +142,7 @@ body {
   /* 애니메이션 */
   opacity: 0;
   transform: translateY(12px);
-  animation: heroReveal 4s ease-in-out infinite;
+  animation: heroReveal 10s ease-in-out infinite;
 
   /* ⭐️ 이게 없으면 데스크탑에서 안 보이는 경우 많음 */
   will-change: opacity, transform;
@@ -176,13 +176,19 @@ body {
 .section {
   min-height: 100vh;
   padding: 160px 0;
-  scroll-margin-top: 80px; 
+  scroll-margin-top: 40px; 
 }
-
+/* section title: about, reels, contact */
 .section h2 {
+  color: #bbb;
   margin-bottom: 40px;
   font-weight: 600;
-  scroll-margin-top: 80px; 
+  scroll-margin-top: 40px; 
+}
+.section p {
+  color: #888;
+  margin-bottom: 28px;   /* ⭐️ 핵심 */
+  line-height: 1.7;      /* 가독성 크게 올라감 */
 }
 
 .container {
