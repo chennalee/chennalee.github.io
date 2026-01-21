@@ -112,34 +112,21 @@
 
 <!-- Hero Text Typing Animation -->
 <script>
-  const text = "i tell stories through music and sound 🎶";
+  const text = "i tell stories through music and sound";
   const typingElement = document.getElementById("typing");
 
   let index = 0;
-  let isDeleting = false;
 
   function typeEffect() {
-    if (!isDeleting && index < text.length) {
+    if (index < text.length) {
       typingElement.textContent += text.charAt(index);
       index++;
-    } 
-    else if (isDeleting && index > 0) {
-      typingElement.textContent = text.substring(0, index - 1);
-      index--;
+      setTimeout(typeEffect, 70);
     }
-
-    if (index === text.length) {
-      setTimeout(() => isDeleting = true, 2000); // 다 치고 잠깐 멈춤
-    } 
-    else if (index === 0 && isDeleting) {
-      isDeleting = false;
-    }
-
-    setTimeout(typeEffect, isDeleting ? 50 : 80);
   }
 
   typeEffect();
 </script>
-
+  
 </body>
 </html>
