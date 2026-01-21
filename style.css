@@ -130,7 +130,8 @@ body {
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #999;
-  white-space: nowrap;
+  white-space: normal;
+  overflow: visible;
 
   display: flex;
   justify-content: flex-start;
