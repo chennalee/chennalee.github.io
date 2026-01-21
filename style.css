@@ -126,35 +126,32 @@ body {
 
 /* "i tell stories' animated */
 .hero-text {
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: flex;
+  align-items: center;
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #999;
-  white-space: normal;
-  overflow: visible;
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-/* 애니메이션 준비 상태 */
-.hero-text span {
-  display: block;
+  /* 애니메이션 */
   opacity: 0;
-  transform: translateY(10px);
-  animation: heroReveal 3.5s ease-in-out infinite;
+  transform: translateY(12px);
+  animation: heroReveal 1.2s ease-out forwards;
+
+  /* ⭐️ 이게 없으면 데스크탑에서 안 보이는 경우 많음 */
+  will-change: opacity, transform;
 }
-/* 커서 */
-.cursor {
-  margin-left: 4px;
-  color: #ff9ad3;
-  animation: blink 1s infinite;
+@keyframes heroReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.typing-done + .cursor {
-  animation: none;
-  opacity: 0;
-}
 
 
 /* SECTIONS */
@@ -244,4 +241,12 @@ body {
 .footer a:hover {
   color: #000;
   transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-text {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
