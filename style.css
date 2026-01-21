@@ -176,14 +176,14 @@ body {
 .section {
   min-height: 100vh;
   padding: 160px 0;
-  scroll-margin-top: 40px; 
+  scroll-margin-top: 140px; 
 }
 /* section title: about, reels, contact */
 .section h2 {
   color: #bbb;
   margin-bottom: 40px;
   font-weight: 600;
-  scroll-margin-top: 40px; 
+  scroll-margin-top: 140px; 
 }
 
 #contact h2 {
@@ -300,6 +300,39 @@ body {
   color: #000;
   transform: scale(1.1);
 } */
+
+/* 순서 */
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop order */
+.hero    { order: 1; }
+.about   { order: 2; }
+.reels   { order: 3; }
+.contact { order: 4; }
+
+@media (max-width: 768px) {
+  .hero    { order: 1; }
+  .reels   { order: 2; }
+  .about   { order: 3; }
+  .contact { order: 4; }
+}
+@media (max-width: 768px) {
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: 1;
+  }
+
+  .about-text {
+    order: 2;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .hero-text {
