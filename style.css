@@ -103,8 +103,7 @@ body {
 
 .hero {
   min-height: 100vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  scroll-margin-top: 0;
 
   display: flex;
   justify-content: center;
@@ -125,7 +124,6 @@ body {
 /* "i tell stories' animated */
 .hero-text {
   min-height: 100vh;
-  padding-top: 60px;
   padding-bottom: 60px;
 
   display: flex;
@@ -173,15 +171,15 @@ body {
 /* SECTIONS */
 .section {
   min-height: 100vh;
-  padding: 160px 0;
-  scroll-margin-top: 140px; 
+  padding: 100px 0 80px;
+  scroll-margin-top: 100px; 
 }
 /* section title: about, reels, contact */
 .section h2 {
   color: #bbb;
   margin-bottom: 40px;
   font-weight: 600;
-  scroll-margin-top: 140px; 
+  scroll-margin-top: 100px; 
 }
 
 #contact h2 {
