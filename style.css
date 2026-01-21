@@ -224,11 +224,15 @@ body {
 /* CONTACT FORM */
 .contact-form {
   max-width: 700px;
+  align-items: center;
 }
 
 .contact-form .row {
   display: flex;
   gap: 20px;
+}
+.contact-form label {
+  color: rgba(255, 255, 255, 0.55); /* ← 여기 수정 */
 }
 
 .contact-form input,
@@ -249,6 +253,9 @@ body {
 
 .contact-form button {
   padding: 14px 40px;
+  align-self: center;
+  font-size: 20px;
+  font-weight: 500px;
   border-radius: 30px;
   border: none;
   background: #888;
