@@ -114,10 +114,10 @@ body {
 
 .hero {
   height: 100vh;
-  padding-top: 240px; /* header 높이 보정 */
+  padding-top: 100px; /* header 높이 보정 */
   color: #999;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /*center에서 변경함*/
   align-items: center;
 }
 
