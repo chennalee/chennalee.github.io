@@ -30,17 +30,6 @@ body {
   z-index: 100;
 }
 
-/*
-  width: 100%;
-  height: 220px;
-  background: #fffaf0;
-  display: flex;
-  flex-direction: column; /*세로정렬
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-*/
 .logo {
   font-size: 48px;
   letter-spacing: 1px;
@@ -111,18 +100,27 @@ body {
   letter-spacing: 6px;
   text-align: center;
 }
-/* 'i tell stories' 문장 Original
+
 .hero {
-  height: 100vh;
-  padding-top: 100px; /* header 높이 보정 
-  color: #999;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -1px;
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   display: flex;
-  justify-content: flex-start; /*center에서 변경함
+  justify-content: center;
   align-items: center;
-} */
+  text-align: center;
+
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: #999;
+
+  opacity: 0;
+  transform: translateY(12px);
+  animation: heroReveal 10s ease-in-out infinite;
+}
+
 
 /* "i tell stories' animated */
 .hero-text {
@@ -232,7 +230,7 @@ body {
   gap: 20px;
 }
 .contact-form label {
-  color: rgba(255, 255, 255, 0.55); /* ← 여기 수정 */
+  color: #aaa; /* ← 여기 수정 */
 }
 
 .contact-form input,
@@ -255,7 +253,7 @@ body {
   padding: 14px 40px;
   align-self: center;
   font-size: 20px;
-  font-weight: 500px;
+  font-weight: 500;
   border-radius: 30px;
   border: none;
   background: #888;
