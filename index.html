@@ -40,8 +40,7 @@
   <section id="home" class="hero">
     <div class="container">
       <p class="hero-text">
-        <span id="typing"></span>
-        <span class="cursor">|</span>
+       i tell stories through music and sound 🎶
       </p>
     </div>
   </section>
@@ -110,23 +109,5 @@
       </div>
     </footer>
 
-<!-- Hero Text Typing Animation -->
-<script>
-  const text = "i tell stories through music and sound";
-  const typingElement = document.getElementById("typing");
-
-  let index = 0;
-
-  function typeEffect() {
-    if (index < text.length) {
-      typingElement.textContent += text.charAt(index);
-      index++;
-      setTimeout(typeEffect, 70);
-    }
-  }
-
-  typeEffect();
-</script>
-  
 </body>
 </html>
