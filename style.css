@@ -185,8 +185,16 @@ body {
   font-weight: 600;
   scroll-margin-top: 40px; 
 }
+
+#contact h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* description letter */
 .section p {
   color: #888;
+  font-size: 12px;
   margin-bottom: 28px;   /* ⭐️ 핵심 */
   line-height: 1.7;      /* 가독성 크게 올라감 */
 }
