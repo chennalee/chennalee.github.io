@@ -126,13 +126,11 @@ body {
 
 /* "i tell stories' animated */
 .hero-text {
-  min-height: 100vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -1px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: #999;
+  white-space: nowrap;
 
   display: flex;
   justify-content: flex-start;
@@ -145,29 +143,17 @@ body {
   transform: translateY(10px);
   animation: heroReveal 3.5s ease-in-out infinite;
 }
-/* 등장 순서 */
-.hero-text span:nth-child(1) { animation-delay: 0s; }
-.hero-text span:nth-child(2) { animation-delay: 0.4s; }
-.hero-text span:nth-child(3) { animation-delay: 0.8s; }
-.hero-text span:nth-child(4) { animation-delay: 1.2s; }
+/* 커서 */
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
 
-@keyframes heroReveal {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  80% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-6px);
-  }
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 
