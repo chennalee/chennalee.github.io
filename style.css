@@ -131,24 +131,42 @@ body {
   padding-bottom: 60px;
 
   display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 28px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: -2px;
   color: #999;
 
   /* 애니메이션 */
   opacity: 0;
   transform: translateY(12px);
-  animation: heroReveal 1.2s ease-out forwards;
+  animation: heroReveal 4s ease-in-out infinite;
 
   /* ⭐️ 이게 없으면 데스크탑에서 안 보이는 경우 많음 */
   will-change: opacity, transform;
 }
+
 @keyframes heroReveal {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  20% {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
   }
 }
 
