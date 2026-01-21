@@ -69,6 +69,7 @@ body {
   color: #999;
   text-decoration: none;
   text-transform: lowercase;
+  line-height: 1.2;
 }
 
 .header nav a,
@@ -83,12 +84,12 @@ body {
   position: relative;
   padding-bottom: 6px;
 }
-
+/* 메뉴 밑 라인 */
 .header nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   height: 1px;
   background: #bbb;
