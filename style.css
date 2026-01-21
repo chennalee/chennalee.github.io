@@ -65,7 +65,7 @@ body {
 
 .header nav a {
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   color: #999;
   text-decoration: none;
   text-transform: lowercase;
