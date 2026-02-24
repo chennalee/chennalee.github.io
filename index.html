@@ -1,132 +1,72 @@
-<!-- head -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>CHENNA LEE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Font -->
-  <link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-  rel="stylesheet"
-/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css"/>  
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
   
 <body>
-  <!-- HEADER / NAV -->
   <header class="header">
-    <a href="#home" class="logo">CHENNA LEE</a>
-    <nav class="menu">
-      <a href="#about">about</a>
-      <a href="#reels">reels</a>
-      <a href="#contact">contact</a>
-    </nav>
+    <div class="header-inner">
+      <a href="#home" class="logo">CHENNA LEE</a>
+      <nav class="menu">
+        <a href="#about">about</a>
+        <a href="#reels">reels</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
   </header>
 
-<main class="page">
-  <section id="home" class="hero">...</section>
-  <section id="about" class="section about">...</section>
-  <section id="reels" class="section reels">...</section>
-  <section id="contact" class="section contact">...</section>
-</main>
-
-  <!-- HERO ORIGINAL
-  <section id="home" class="hero">
-    <div class="container">
-      <p>i tell stories through music and sound🎶</p>
-    </div>
-  </section> -->
-
-<!-- HERO Animated -->
-  <section id="home" class="hero">
-    <div class="container">
-      <p class="hero-text">
-       i tell stories through music and sound 🎶
-      </p>
-    </div>
-  </section>
-        
-  <!-- ABOUT -->
-  <section id="about" class="section about">
-    <div class="container">
-      <p>
-        Chenna (ChaeEun) Lee is a composer and sound artist from South Korea, based in San Francisco. With a strong passion for exploring the impact that sound has on us, she creates music and sound that help connect to deeper emotions and experiences.
-      </p>
-      <p>
-        Her collaborations include scoring the online RPG game <em>Three Kingdoms of Romance</em>, published by Weaver Interactive game (Korea), and composing arrival music for the conference <em>Sleep & Dreams: Music, Neuroscience & Stories of Slumber</em>, presented by San Francisco Conservatory of Music, UC San Francisco Department of Neurology, and The Nocturnists. Chenna’s expertise in orchestration earned her recognition as a winner of the <em>2024 KDFC Sound Logo Competition</em>, where she arranged eight logo songs for the Classical KDFC Radio Station.
-      </p>
-      <p>
-        Beyond her composition achievements, Chenna contributed to research on audiovisual cross-modal perception, resulting in publications and poster presentations at renowned international journals and conferences.
-      </p>
-      <p>
-        Chenna holds a Master of Music degree in Technology and Applied Composition from San Francisco Conservatory of Music, where she studied under the supervision of Daria Novo, and a Bachelor of Music in Composition from Seoul National University.
-      </p>
-    </div>
-  </section>
-
-  <!-- REELS -->
-  <section id="reels" class="section reels">
-    <div class="container">
-        <!-- ReelCrafter reel: Chenna Music -->
-        <iframe
-         width="100%"
-         height="400"
-         scrolling="no"
-         frameborder="no"
-         justify-content: center;
-         src="https://play.reelcrafter.com/embed/e69f9843-8511-4df6-9df1-afb2ee01abe8">
-        </iframe>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-<section id="contact" class="section contact">
-  <div class="container">
-    <h2>contact</h2>
-
-    <form class="contact-form">
-      <label>
-        Email <span class="required">(required)</span>
-        <input type="email" name="email" required />
-      </label>
-
-      <label>
-        Message <span class="required">(required)</span>
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</section>
-
-  
-  <!-- FOOTER -->
-    <footer class="footer">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/chennalee" target="_blank" aria-label="LinkedIn">
-          <img src="icons/linkedin.svg" alt="LinkedIn">
-        </a>
-        
-        <a href="https://www.instagram.com/thechennie" target="_blank" aria-label="Instagram">
-          <img src="icons/instagram.svg" all="Instagram">
-        </a>
-        
-          <a href="https://www.youtube.com/@chennalee" target="_blank" aria-label="YouTube">
-          <img src="icons/youtube.svg" all="youtube">
-        </a>
+  <main class="page">
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-text">i tell stories through music and sound 🎶</p>
       </div>
-      
-      <p class="copyright">
-        © 2026 Chenna Lee. All rights reserved.
-      </p>
-    </footer>
+    </section>
+          
+    <section id="about" class="section about">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="profile.jpg" alt="Chenna Lee Profile">
+        </div>
+        <div class="about-text">
+          <p>Chenna (ChaeEun) Lee is a composer and sound artist...</p>
+          <p>Her collaborations include scoring the online RPG game <em>Three Kingdoms of Romance</em>...</p>
+          <p>Beyond her composition achievements, Chenna contributed to research...</p>
+          <p>Chenna holds a Master of Music degree...</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="reels" class="section reels">
+      <div class="container">
+        <iframe width="100%" height="400" scrolling="no" frameborder="no" 
+                src="https://play.reelcrafter.com/embed/e69f9843-8511-4df6-9df1-afb2ee01abe8">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>contact</h2>
+        <div class="email-box">
+          <a href="mailto:your-email@gmail.com" class="email-link">your-email@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/chennalee" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/thechennie" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@chennalee" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2026 Chenna Lee. All rights reserved.</p>
+  </footer>
 </body>
 </html>
