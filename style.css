@@ -50,11 +50,12 @@ body {
 }
 
 .menu a {
-  font-size: 11px; /* 글씨 크기 축소 */
+  font-size: 11px;
   color: #999;
   text-decoration: none;
   text-transform: lowercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-weight: 600; /* Semi-bold: 600 적용 */
 }
 
 /* 3. 컨테이너 (1번 수정: 좌우 여백 복구) */
@@ -74,6 +75,16 @@ body {
 /* 첫 번째 섹션(Reels)이 헤더에 가려지지 않게 특별히 여백 추가 */
 #reels {
   padding-top: 180px; 
+}
+
+#reels .container {
+  max-width: 700px; /* 기존 900px에서 700px로 줄여 영상 집중도 향상 */
+  margin: 0 auto;
+}
+
+.reels iframe {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 미세한 그림자로 고급스러움 추가 */
 }
 
 /* 5. ABOUT 섹션 스타일 (사진+글) */
@@ -97,23 +108,37 @@ body {
 }
 
 /* 6. CONTACT (이메일 위주) */
-.contact h2 {
-  font-size: 11px;
-  text-transform: lowercase;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
+#contact {
+  text-align: center; /* 전체 중앙 정렬 */
+}
+
+#contact h2 {
+  font-size: 13px; /* 제목 약간 키움 */
+  text-transform: uppercase; /* 대문자 변경 */
+  letter-spacing: 3px;
+  margin-bottom: 40px;
   color: #bbb;
 }
 
 .email-box {
-  text-align: center;
+  margin-top: 20px;
 }
 
 .email-link {
-  font-size: 18px;
-  color: #ff9ad3; /* 포인트 컬러 */
+  font-size: 20px; /* 이메일 주소 크게 */
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: 300; /* 글자가 크므로 얇게 설정하면 더 세련되어 보임 */
+  color: #ff9ad3;
   text-decoration: none;
   border-bottom: 1px solid #ff9ad3;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  color: #444;
+  border-bottom-color: #444;
 }
 
 /* 7. FOOTER (3번 수정: 카피라이트 소형화 및 색상 통일) */
