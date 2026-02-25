@@ -141,6 +141,12 @@ body {
 /* 6. CONTACT (크게, 중앙정렬, Uppercase) */
 #contact {
   text-align: center;
+  /* 화면 높이(100vh)에서 헤더 높이 등을 제외한 만큼 공간 확보 */
+  min-height: 80vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 상단부터 정렬 */
+  padding-top: 100px; /* 메뉴바에 가려지지 않게 여백 */
 }
 
 #contact h2 {
