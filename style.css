@@ -111,8 +111,10 @@ body {
 }
 
 .reels iframe {
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  background-color: transparent !important;
+  border: none;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 
 /* 5. ABOUT (사진 + 텍스트) */
