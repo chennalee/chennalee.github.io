@@ -52,14 +52,14 @@ body {
 /* 1. 메뉴 기본 설정 */
 .menu a {
   font-family: 'Outfit', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
   color: #999;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 2px;
   position: relative; /* 밑줄 배치를 위한 기준점 */
-  padding-bottom: 4px; /* 글자와 밑줄 사이 간격 */
+  padding-bottom: 2px; /* 글자와 밑줄 사이 간격 */
   transition: color 0.3s ease;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .menu a:hover::after {
   transform: scaleX(1); /* 너비를 100%로 확장 */
-  transform-origin: left; /* 왼쪽에서부터 채워지도록 설정 */
+  transform-origin: center; /* 왼쪽에서부터 채워지도록 설정 */
 }
 
 /* 3. 컨테이너 및 섹션 (여백 복구) */
