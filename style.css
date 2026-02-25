@@ -1,4 +1,4 @@
-/* 1. 기본 설정 및 색상 통일 */
+/* 1. 기본 설정 - Urbanist 적용 */
 * { 
   margin: 0; 
   padding: 0; 
@@ -10,13 +10,13 @@ html {
 }
 
 body { 
-  font-family: "Poppins", sans-serif; 
+  font-family: 'Urbanist', sans-serif; /* 폰트 변경 */
   background: #fffcf4; 
-  /* 2번 수정: 본문 텍스트 색상을 메뉴와 동일한 회색(#999)으로 통일 */
   color: #999; 
+  -webkit-font-smoothing: antialiased; /* 글자를 더 매끄럽게 표현 */
 }
 
-/* 2. 헤더 및 로고 정렬 (제목 길이에 맞춤) */
+/* 2. HEADER & MENU (제목 길이에 정렬 + Semi-bold) */
 .header {
   position: fixed;
   top: 0; 
@@ -36,17 +36,17 @@ body {
 
 .logo {
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 800; /* 로고는 가장 두껍게 */
   color: #ff9ad3;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
 .menu {
-  width: 100%; /* 로고 너비에 맞춰 정렬 */
+  width: 100%;
   display: flex;
   justify-content: space-between; 
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .menu a {
@@ -55,69 +55,70 @@ body {
   text-decoration: none;
   text-transform: lowercase;
   letter-spacing: 1.5px;
-  font-weight: 600; /* Semi-bold: 600 적용 */
+  font-weight: 600; /* Semi-bold 적용 */
 }
 
-/* 3. 컨테이너 (1번 수정: 좌우 여백 복구) */
+/* 3. 컨테이너 및 섹션 (여백 복구) */
 .container {
-  max-width: 900px; /* 전체 가로 폭 제한 */
-  margin: 0 auto;   /* 중앙 정렬 */
-  padding: 0 40px;  /* 양 옆 여백 */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* 4. 섹션 설정 (1번 수정: Reels가 먼저 올 때를 위한 여백) */
 .section {
   padding: 80px 0;
   min-height: auto;
-  scroll-margin-top: 140px; /* 메뉴 클릭 시 걸리는 위치 */
+  scroll-margin-top: 150px;
 }
 
-/* 첫 번째 섹션(Reels)이 헤더에 가려지지 않게 특별히 여백 추가 */
+/* 첫 섹션(Reels) 상단 여백 */
 #reels {
-  padding-top: 180px; 
+  padding-top: 200px; 
 }
 
+/* 4. REELS (너비 줄이기) */
 #reels .container {
-  max-width: 700px; /* 기존 900px에서 700px로 줄여 영상 집중도 향상 */
-  margin: 0 auto;
+  max-width: 750px; /* 영상 너비 슬림하게 조정 */
 }
 
 .reels iframe {
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 미세한 그림자로 고급스러움 추가 */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-/* 5. ABOUT 섹션 스타일 (사진+글) */
+/* 5. ABOUT (사진 + 텍스트) */
 .about-content {
   display: flex;
-  gap: 50px; /* 사진과 글 사이 간격 */
+  gap: 50px;
   align-items: flex-start;
 }
 
 .about-image img {
-  width: 280px; /* 사진 너비 */
+  width: 260px;
   height: auto;
   border-radius: 4px;
 }
 
 .about-text p {
-  font-size: 13px;
+  font-size: 14px; /* Urbanist는 살짝 크게 보는게 예쁨 */
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #999; /* 폰트 색상 통일 */
+  color: #999;
+  font-weight: 400;
 }
 
-/* 6. CONTACT (이메일 위주) */
+/* 6. CONTACT (크게, 중앙정렬, Uppercase) */
 #contact {
-  text-align: center; /* 전체 중앙 정렬 */
+  text-align: center;
 }
 
 #contact h2 {
-  font-size: 13px; /* 제목 약간 키움 */
-  text-transform: uppercase; /* 대문자 변경 */
-  letter-spacing: 3px;
-  margin-bottom: 40px;
+  font-size: 13px;
+  text-transform: uppercase; 
+  letter-spacing: 4px;
+  margin-bottom: 30px;
   color: #bbb;
+  font-weight: 600;
 }
 
 .email-box {
@@ -125,25 +126,24 @@ body {
 }
 
 .email-link {
-  font-size: 20px; /* 이메일 주소 크게 */
-  text-transform: lowercase;
-  letter-spacing: 1px;
-  font-weight: 300; /* 글자가 크므로 얇게 설정하면 더 세련되어 보임 */
+  font-size: 26px; /* 크기 키움 */
   color: #ff9ad3;
   text-decoration: none;
+  text-transform: lowercase; /* 대문자 정렬 */
+  letter-spacing: 2px;
+  font-weight: 300; /* 크기가 크므로 가볍게 처리 */
   border-bottom: 1px solid #ff9ad3;
-  padding-bottom: 5px;
-  transition: all 0.3s ease;
+  padding-bottom: 8px;
+  transition: opacity 0.3s;
 }
 
 .email-link:hover {
-  color: #444;
-  border-bottom-color: #444;
+  opacity: 0.6;
 }
 
-/* 7. FOOTER (3번 수정: 카피라이트 소형화 및 색상 통일) */
+/* 7. FOOTER */
 .footer { 
-  padding: 60px 0 40px; 
+  padding: 80px 0 40px; 
   text-align: center; 
 }
 
@@ -156,31 +156,23 @@ body {
 
 .social-links a {
   font-size: 22px;
-  color: #bbb; /* 아이콘 색상 */
-  transition: color 0.3s;
+  color: #bbb;
+  transition: 0.3s;
 }
 
-.social-links a:hover {
-  color: #ff9ad3;
-}
+.social-links a:hover { color: #ff9ad3; }
 
 .copyright {
-  font-size: 10px; /* 3번 수정: 더 작게 */
-  color: #bbb;    /* 3번 수정: 색상 연하게 통일 */
-  letter-spacing: 0.5px;
+  font-size: 10px;
+  color: #ccc;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* 카피라이트도 미니멀하게 대문자화 */
 }
 
-/* 8. 모바일 대응 (화면이 작아질 때) */
+/* 모바일 대응 */
 @media (max-width: 768px) {
-  .about-content { 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-  }
-  
-  .logo { font-size: 36px; }
-  
+  .about-content { flex-direction: column; align-items: center; text-align: center; }
+  .logo { font-size: 38px; }
   .container { padding: 0 24px; }
-  
-  #reels { padding-top: 160px; }
+  #reels { padding-top: 180px; }
 }
