@@ -160,9 +160,9 @@ body {
   text-decoration: none;
   text-transform: lowercase; 
   letter-spacing: 2px;
-  font-weight: 400; 
+  font-weight: 600; 
   border-bottom: 1px solid #ff9ad3;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   transition: opacity 0.3s;
 }
 
