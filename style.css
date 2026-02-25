@@ -142,11 +142,14 @@ body {
 #contact {
   text-align: center;
   /* 화면 높이(100vh)에서 헤더 높이 등을 제외한 만큼 공간 확보 */
-  min-height: 80vh; 
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* 상단부터 정렬 */
-  padding-top: 100px; /* 메뉴바에 가려지지 않게 여백 */
+/* 내부 요소(제목, 이메일, 푸터)를 위아래로 분산 배치 */
+  justify-content: space-between; 
+  padding-top: 150px; /* 상단 메뉴바 여백 */
+  padding-bottom: 40px; /* 최하단 여백 */
+  scroll-margin-top: 0; /* min-height가 100vh일 때는 0이 가장 정확합니다 */
 }
 
 #contact h2 {
