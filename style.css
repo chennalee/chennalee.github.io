@@ -1,16 +1,26 @@
-/* 기본 설정 */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* 1. 기본 설정 및 색상 통일 */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
 body { 
   font-family: "Poppins", sans-serif; 
   background: #fffcf4; 
-  color: #999; /* 2번 요청: 전체 본문 색상을 메뉴와 동일한 회색으로 설정 */
+  /* 2번 수정: 본문 텍스트 색상을 메뉴와 동일한 회색(#999)으로 통일 */
+  color: #999; 
 }
 
-/* 1. HEADER & MENU (제목 길이에 맞춘 정렬) */
+/* 2. 헤더 및 로고 정렬 (제목 길이에 맞춤) */
 .header {
   position: fixed;
-  top: 0; width: 100%;
+  top: 0; 
+  width: 100%;
   padding: 40px 0;
   background: #fffcf4;
   z-index: 100;
@@ -33,57 +43,48 @@ body {
 }
 
 .menu {
-  width: 100%;
+  width: 100%; /* 로고 너비에 맞춰 정렬 */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   margin-top: 10px;
 }
 
 .menu a {
-  font-size: 11px;
+  font-size: 11px; /* 글씨 크기 축소 */
   color: #999;
   text-decoration: none;
   text-transform: lowercase;
   letter-spacing: 1px;
 }
 
-/* 1번 요청: 좌우 여백을 담당하는 컨테이너 복구 */
+/* 3. 컨테이너 (1번 수정: 좌우 여백 복구) */
 .container {
-  max-width: 900px; /* 좌우 폭 제한 */
-  margin: 0 auto;   /* 가운데 정렬 */
-  padding: 0 40px;  /* 최소 여백 확보 */
+  max-width: 900px; /* 전체 가로 폭 제한 */
+  margin: 0 auto;   /* 중앙 정렬 */
+  padding: 0 40px;  /* 양 옆 여백 */
 }
 
-/* 2. 섹션 간 간격 조정 */
+/* 4. 섹션 설정 (1번 수정: Reels가 먼저 올 때를 위한 여백) */
 .section {
-  padding: 80px 0; 
+  padding: 80px 0;
   min-height: auto;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 140px; /* 메뉴 클릭 시 걸리는 위치 */
 }
 
-.hero {
-  height: 60vh; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* 첫 번째 섹션(Reels)이 헤더에 가려지지 않게 특별히 여백 추가 */
+#reels {
+  padding-top: 180px; 
 }
 
-.hero-text {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  color: #999;
-}
-
-/* ABOUT 섹션 (이미지 + 텍스트) */
+/* 5. ABOUT 섹션 스타일 (사진+글) */
 .about-content {
   display: flex;
-  gap: 50px;
+  gap: 50px; /* 사진과 글 사이 간격 */
   align-items: flex-start;
 }
 
 .about-image img {
-  width: 280px;
+  width: 280px; /* 사진 너비 */
   height: auto;
   border-radius: 4px;
 }
@@ -92,15 +93,10 @@ body {
   font-size: 13px;
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #999; /* 메뉴와 동일한 색상 */
+  color: #999; /* 폰트 색상 통일 */
 }
 
-/* REELS */
-.reels iframe {
-  border-radius: 8px;
-}
-
-/* CONTACT */
+/* 6. CONTACT (이메일 위주) */
 .contact h2 {
   font-size: 11px;
   text-transform: lowercase;
@@ -115,12 +111,12 @@ body {
 
 .email-link {
   font-size: 18px;
-  color: #ff9ad3; /* 강조를 위해 로고색 사용, 원하시면 #999로 변경 가능 */
+  color: #ff9ad3; /* 포인트 컬러 */
   text-decoration: none;
   border-bottom: 1px solid #ff9ad3;
 }
 
-/* 3번 요청: FOOTER & COPYRIGHT 수정 */
+/* 7. FOOTER (3번 수정: 카피라이트 소형화 및 색상 통일) */
 .footer { 
   padding: 60px 0 40px; 
   text-align: center; 
@@ -136,7 +132,7 @@ body {
 .social-links a {
   font-size: 22px;
   color: #bbb; /* 아이콘 색상 */
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
@@ -144,14 +140,22 @@ body {
 }
 
 .copyright {
-  font-size: 10px; /* 크기 더 작게 */
-  color: #bbb;    /* 색상 연하게 통일 */
+  font-size: 10px; /* 3번 수정: 더 작게 */
+  color: #bbb;    /* 3번 수정: 색상 연하게 통일 */
   letter-spacing: 0.5px;
 }
 
-/* 모바일 대응 */
+/* 8. 모바일 대응 (화면이 작아질 때) */
 @media (max-width: 768px) {
-  .about-content { flex-direction: column; align-items: center; text-align: center; }
+  .about-content { 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+  
   .logo { font-size: 36px; }
+  
   .container { padding: 0 24px; }
+  
+  #reels { padding-top: 160px; }
 }
