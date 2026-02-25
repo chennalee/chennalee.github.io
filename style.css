@@ -9,11 +9,11 @@ html {
   scroll-behavior: smooth; 
 }
 
-body { 
-  font-family: 'Urbanist', sans-serif; /* 폰트 변경 */
-  background: #fffcf4; 
-  color: #999; 
-  -webkit-font-smoothing: antialiased; /* 글자를 더 매끄럽게 표현 */
+body {
+  font-family: 'Outfit', sans-serif; /* 폰트 변경 */
+  background: #fffcf4;
+  color: #999;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 2. HEADER & MENU (제목 길이에 정렬 + Semi-bold) */
@@ -113,7 +113,7 @@ body {
 }
 
 #contact h2 {
-  font-size: 13px;
+  font-size: 21px;
   text-transform: uppercase; 
   letter-spacing: 4px;
   margin-bottom: 30px;
@@ -126,12 +126,12 @@ body {
 }
 
 .email-link {
-  font-size: 26px; /* 크기 키움 */
+  font-size: 15px; 
   color: #ff9ad3;
   text-decoration: none;
-  text-transform: lowercase; /* 대문자 정렬 */
+  text-transform: lowercase; 
   letter-spacing: 2px;
-  font-weight: 300; /* 크기가 크므로 가볍게 처리 */
+  font-weight: 400; 
   border-bottom: 1px solid #ff9ad3;
   padding-bottom: 8px;
   transition: opacity 0.3s;
@@ -164,7 +164,7 @@ body {
 
 .copyright {
   font-size: 10px;
-  color: #ccc;
+  color: #999;
   letter-spacing: 1px;
   text-transform: uppercase; /* 카피라이트도 미니멀하게 대문자화 */
 }
