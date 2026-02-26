@@ -82,9 +82,16 @@ body {
   color: #999; 
 }
 
-.menu a:hover::after {
-  transform: scaleX(1); /* 너비를 100%로 확장 */
-  transform-origin: center; /* 왼쪽에서부터 채워지도록 설정 */
+/* 공통: hover와 active 상태 모두 밑줄이 보이게 설정 */
+.menu a:hover::after,
+.menu a.active::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+/* active 상태일 때 글자색 고정 (원하는 경우) */
+.menu a.active {
+  color: #ff9ad3;
 }
 
 /* 3. 컨테이너 및 섹션 (여백 복구) */
