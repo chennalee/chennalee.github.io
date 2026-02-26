@@ -56,7 +56,7 @@ body {
   font-weight: 600;
   color: #999;
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   position: relative; /* 밑줄 배치를 위한 기준점 */
   padding-bottom: 2px; /* 글자와 밑줄 사이 간격 */
