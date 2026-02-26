@@ -52,11 +52,11 @@ body {
 /* 1. 메뉴 기본 설정 */
 .menu a {
   font-family: 'Outfit', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   color: #999;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 2px;
   position: relative; /* 밑줄 배치를 위한 기준점 */
   padding-bottom: 2px; /* 글자와 밑줄 사이 간격 */
