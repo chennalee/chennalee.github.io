@@ -65,4 +65,20 @@
     <p class="copyright">© 2026 Chenna Lee. All rights reserved.</p>
   </footer>
 </body>
+
+  <script>
+    // 1. 모든 메뉴 링크를 가져옵니다.
+    const links = document.querySelectorAll('.menu a');
+
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        // 2. 다른 메뉴에 붙어있던 'active' 이름표를 다 떼고
+        links.forEach(l => l.classList.remove('active'));
+        // 3. 방금 클릭한 메뉴에만 'active' 이름표를 붙입니다.
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+  
 </html>
