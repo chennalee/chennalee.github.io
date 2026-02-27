@@ -91,7 +91,7 @@ body {
 
 /* active 상태일 때 글자색 고정 (원하는 경우) */
 .menu a.active {
-  color: #ff9ad3;
+  color: #999;
 }
 
 /* 3. 컨테이너 및 섹션 (여백 복구) */
