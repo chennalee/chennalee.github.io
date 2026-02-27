@@ -78,7 +78,17 @@
         this.classList.add('active');
       });
     });
+
+      // 1. 로고 요소를 가져옵니다.
+    const logo = document.querySelector('.logo');
+    
+    // 2. 로고를 클릭했을 때의 동작을 정의합니다.
+    logo.addEventListener('click', function() {
+      // 모든 메뉴에서 'active' 클래스를 제거하여 밑줄을 지웁니다.
+      links.forEach(l => l.classList.remove('active'));
+    });
+    
   </script>
-</body>
+
   
 </html>
