@@ -107,23 +107,39 @@ body {
   scroll-margin-top: 150px;
 }
 
-/* 첫 섹션(Reels) 상단 여백 */
+/* 1. REELS 섹션 및 컨테이너 */
 #reels {
   padding-top: 200px; 
 }
 
-/* 4. REELS (너비 줄이기) */
 #reels .container {
-  max-width: 750px; /* 영상 너비 슬림하게 조정 */
+  max-width: 750px; /* 영상 너비 슬림하게 유지 */
+  margin: 0 auto;   /* 중앙 정렬 보장 */
 }
 
+/* 2. REELS Iframe (스타일 및 높이 관리) */
 .reels iframe {
+  width: 100%;      /* 컨테이너 너비에 맞춤 */
+  height: 600px;    /* [핵심] 4개 트랙 기준 높이 (나중에 여기서 수정) */
   background-color: transparent !important;
   border: none;
-  /* border-radius: 8px; */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  box-shadow: none;
+  
+  /* 높이 변경 시 부드럽게 변하도록 애니메이션 추가 */
+  transition: height 0.3s ease;
 }
 
+/* 3. 📱 모바일 환경 대응 */
+@media (max-width: 768px) {
+  #reels {
+    padding-top: 120px; /* 모바일에서는 상단 여백을 살짝 줄임 */
+  }
+  
+  .reels iframe {
+    /* 모바일은 트랙 리스트가 세로로 길어지므로 PC보다 높게 설정 */
+    height: 750px; 
+  }
+}
 /* 5. ABOUT (사진 + 텍스트) */
 .about-content {
   display: flex;
