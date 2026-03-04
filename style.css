@@ -114,18 +114,19 @@ body {
 }
 
 #reels .container {
-  max-width: 600ox;
-  margin: 0 auto;
+  /* 폭을 550px로 더 줄였습니다. (기존 600~750px보다 슬림) */
+  max-width: 550px !important; 
+  margin: 0 auto !important;
   padding: 0 20px;
-  /* display: flex를 지우거나 아래처럼 block으로 강제하여 쪼그라듦 방지 */
-  display: block; 
+  /* flex를 제거하고 block으로 고정하여 꽉 차게 만듭니다 */
+  display: block !important; 
 }
 
 /* 2. REELS Iframe (스타일 및 높이 관리) */
 .reels-iframe {
   display: block; /* 쪼그라들지 않도록 블록 요소로 설정 */
   width: 100%;          /* 부모(750px) 너비를 꽉 채움 */
-  height: 400px;        /* 4개 트랙이 다 보일 정도의 높이 - 트랙 추가시 여기서 변경 */
+  height: 600px;        /* 4개 트랙이 다 보일 정도의 높이 - 트랙 추가시 여기서 변경 */
   border: none;
   box-shadow: none !important; /* 그림자 절대 제거 */
   background: transparent;
@@ -250,8 +251,8 @@ body {
   }
   
   #reels .container {
-    max-width: 100%;    /* 모바일에서는 화면 너비에 맞춤 */
-    display: flex;      /* 모바일 중앙 정렬을 위해 flex 사용 */
+    max-width: 100% !important;
+    display: flex !important;
     justify-content: center;
   }
 
