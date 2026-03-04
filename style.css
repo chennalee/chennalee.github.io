@@ -246,8 +246,8 @@ body {
   .container { padding: 0 24px; }
   
   /* 릴스 상단 여백 및 높이 조정 */
-  #reels { padding-top: 180px; }
+  #reels { padding-top: 120px; }
   .reel-iframe {
-    height: 800px; /* 모바일에서 트랙 잘리지 않도록 높이 확보 */
+    height: 650px; /* 모바일에서 트랙 잘리지 않도록 높이 확보 */
   }
 }
