@@ -110,36 +110,30 @@ body {
 /* 1. REELS 섹션 및 컨테이너 */
 #reels {
   padding-top: 200px; 
+  width: 100%;
 }
 
 #reels .container {
   max-width: 750px; /* 영상 너비 슬림하게 유지 */
-  margin: 0 auto;   /* 중앙 정렬 보장 */
+  margin: 0 auto; /* 가로 중앙 정렬 핵심 */
+  padding: 0 20px; /* 모바일 양옆 여백 */
+  display: flex; /* 내부 요소 정렬을 위해 추가 */
+  justify-content: center; 
 }
 
 /* 2. REELS Iframe (스타일 및 높이 관리) */
-.reels iframe {
-  width: 100%;      /* 컨테이너 너비에 맞춤 */
-  height: 600px;    /* [핵심] 4개 트랙 기준 높이 (나중에 여기서 수정) */
-  background-color: transparent !important;
+.reels-iframe {
+  display: blcok; /* 쪼그라들지 않도록 블록 요소로 설정 */
+  width: 100%;          /* 부모(750px) 너비를 꽉 채움 */
+  height: 650px;        /* 4개 트랙이 다 보일 정도의 높이 - 트랙 추가시 여기서 변경 */
   border: none;
-  box-shadow: none;
+  box-shadow: none !important; /* 그림자 절대 제거 */
+  background: transparent;
   
   /* 높이 변경 시 부드럽게 변하도록 애니메이션 추가 */
   transition: height 0.3s ease;
 }
 
-/* 3. 📱 모바일 환경 대응 */
-@media (max-width: 768px) {
-  #reels {
-    padding-top: 120px; /* 모바일에서는 상단 여백을 살짝 줄임 */
-  }
-  
-  .reels iframe {
-    /* 모바일은 트랙 리스트가 세로로 길어지므로 PC보다 높게 설정 */
-    height: 750px; 
-  }
-}
 /* 5. ABOUT (사진 + 텍스트) */
 .about-content {
   display: flex;
@@ -250,5 +244,10 @@ body {
   .about-content { flex-direction: column; align-items: center; text-align: center; }
   .logo { font-size: 38px; }
   .container { padding: 0 24px; }
+  
+  /* 릴스 상단 여백 및 높이 조정 */
   #reels { padding-top: 180px; }
+  .reel-iframe {
+    height: 800px; /* 모바일에서 트랙 잘리지 않도록 높이 확보 */
+  }
 }
