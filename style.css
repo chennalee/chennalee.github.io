@@ -109,7 +109,7 @@ body {
 
 /* 1. REELS 섹션 및 컨테이너 */
 #reels {
-  padding-top: 150px; 
+  padding-top: 100px; 
   width: 100%;
 }
 
@@ -247,7 +247,7 @@ body {
   .container { padding: 0 24px; }
   
   /* 릴스 상단 여백 및 높이 조정 */
-  #reels { padding-top: 200px;
+  #reels { padding-top: 140px;
   }
   
   #reels .container {
