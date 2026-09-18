@@ -35,16 +35,32 @@
     </div>
   </section>
           
-    <section id="about" class="section about">
+<section id="about" class="section about">
       <div class="container about-content">
         <div class="about-image">
           <img src="profile.jpg" alt="Chenna Lee Profile">
         </div>
         <div class="about-text">
-          <p>Chenna (ChaeEun) Lee is a composer and sound artist from South Korea, based in San Francisco. With a strong passion for exploring the impact that sound has on us, she creates music and sound that help connect to deeper emotions and experiences.</p>
-          <p>Her collaborations include scoring the online RPG game <em>Three Kingdoms of Romance</em>, published by Weaver Interactive game (Korea), and composing arrival music for the conference <em>Sleep & Dreams: Music, Neuroscience & Stories of Slumber</em>, presented by San Francisco Conservatory of Music, UC San Francisco Department of Neurology, and The Nocturnists. Chenna’s expertise in orchestration earned her recognition as a winner of the <em>2024 KDFC Sound Logo Competition</em>, where she arranged eight logo songs for the Classical KDFC Radio Station.</p>
-          <p>Beyond her composition achievements, Chenna contributed to research on audiovisual cross-modal perception, resulting in publications and poster presentations at renowned international journals and conferences.</p>
-          <p>Chenna holds a Master of Music degree in Technology and Applied Composition from San Francisco Conservatory of Music, where she studied under the supervision of Daria Novo, and a Bachelor of Music in Composition from Seoul National University.</p>
+          <!-- en | kr 선택 버튼 -->
+          <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" onclick="switchLang('kr')">KR</button>
+          </div>
+
+          <!-- English Content -->
+          <div id="content-en" class="lang-content active">
+            <p>Chenna (ChaeEun) Lee is a composer and sound artist from South Korea, based in San Francisco. With a strong passion for exploring the impact that sound has on us, she creates music and sound that help connect to deeper emotions and experiences.</p>
+            <p>Her collaborations include scoring the online RPG game <em>Three Kingdoms of Romance</em>, published by Weaver Interactive game (Korea), and composing arrival music for the conference <em>Sleep & Dreams: Music, Neuroscience & Stories of Slumber</em>, presented by San Francisco Conservatory of Music, UC San Francisco Department of Neurology, and The Nocturnists. Chenna’s expertise in orchestration earned her recognition as a winner of the <em>2024 KDFC Sound Logo Competition</em>, where she arranged eight logo songs for the Classical KDFC Radio Station.</p>
+            <p>Beyond her composition achievements, Chenna contributed to research on audiovisual cross-modal perception, resulting in publications and poster presentations at renowned international journals and conferences.</p>
+            <p>Chenna holds a Master of Music degree in Technology and Applied Composition from San Francisco Conservatory of Music, where she studied under the supervision of Daria Novo, and a Bachelor of Music in Composition from Seoul National University.</p>
+          </div>
+
+          <!-- Korean Content (필요시 문구를 수정하세요) -->
+          <div id="content-kr" class="lang-content">
+            <p>영화의 호흡과 리듬을 섬세한 음악 언어로 풀어내는 작업에 관심을 두고 있습니다.</p>
+            <p>서울대학교에서 작곡과 뇌-마음-행동을, 샌프란시스코 음악원에서 기술 및 응용 작곡을 공부했습니다.</p>
+          </div>
         </div>
       </div>
     </section>
