@@ -258,6 +258,41 @@ body {
 
   .reels-iframe {
     width: 100%;
+
+    /* en | kr 버튼 및 언어 전환 스타일 */
+.lang-switch {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: inherit;
+  color: #999; /* 다른 bio 텍스트와 같은 기본 색상 */
+  padding: 0;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+.lang-btn.active {
+  color: #ff9ad3; /* 클릭 시 핑크색으로 전환 */
+  font-weight: 600;
+}
+.lang-divider {
+  margin: 0 8px;
+  color: #ccc;
+}
+.lang-content {
+  display: none; /* 평소에는 두 언어 모두 숨김 */
+}
+.lang-content.active {
+  display: block; /* active가 붙은 언어만 표시 */
+}
     height: 620px;      /* 모바일 여백이 너무 많지 않도록 최적화 */
   }
 }
