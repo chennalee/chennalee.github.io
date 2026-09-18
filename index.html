@@ -116,10 +116,10 @@ function switchLang(lang) {
   contents.forEach(content => content.classList.remove('active'));
 
   if (lang === 'en') {
-    document.querySelector('.lang-btn:nth-child(1)').classList.add('active');
+    btns[0].classList.add('active');
     document.getElementById('content-en').classList.add('active');
   } else {
-    document.querySelector('.lang-btn:nth-child(3)').classList.add('active');
+    btns[1].classList.add('active');
     document.getElementById('content-kr').classList.add('active');
   }
 }
